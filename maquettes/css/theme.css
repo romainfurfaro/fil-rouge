@@ -13,12 +13,17 @@
    "vert foret" ci-dessous, a decommenter pour tester.
    ========================================================================== */
 
+@font-face {
+  font-family: "Lato";
+  src: url("/repo/maquettes/assets/fonts/Lato-Regular.ttf");
+}
+
 :root {
   --color-primary: #c20114;
   --color-primary-hover: #b70113;
   --color-primary-soft: #ffd6db;
   --color-focus: #ca4953;
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-sans: "Lato", system-ui, sans-serif;
   --radius: 0.25rem;
   --radius-lg: 0.5rem;
 }
