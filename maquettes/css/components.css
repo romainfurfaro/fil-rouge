@@ -184,7 +184,7 @@
   border-color: var(--color-info);
 }
 
-.list {
+.horizontal-list {
   display: flex;
   gap: var(--space-5);
 }
@@ -236,4 +236,5 @@
 }
 
 .color__label {
+  padding: var(--space-2);
 }
