@@ -1,0 +1,66 @@
+<!doctype html>
+<!-- lang : langue de la page, utilisee par les lecteurs d'ecran et les moteurs de recherche. -->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Sans cette balise, le mobile affiche la page en version desktop dezoomee. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Titre unique par page : "Nom de la page - Nom du site". C'est ce qui
+       s'affiche dans l'onglet, l'historique et les resultats de recherche. -->
+    <title>Connexion - TechCorp RH</title>
+    <meta name="description" content="Connexion à votre compte TechCorp RH" />
+
+    <!-- Application interne : pas d'indexation par les moteurs de recherche. -->
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#1d4ed8" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body class="auth">
+    <div class="auth__aside">
+      <div class="auth__header">
+        <img
+          alt="Logo TechCorp RH"
+          src="./assets/logo.svg"
+          class="auth__logo"
+        />
+        <span>TechCorp RH</span>
+      </div>
+      <div>
+        <p>
+          Vos congés, votre matériel et vos notes de frais, au même endroit.
+        </p>
+        <p>La plateforme RH interne de TechCorp.</p>
+      </div>
+      <p>TechCorp 2026</p>
+    </div>
+    <main class="auth__main">
+      <div class="auth__panel">
+        <h1>Connexion</h1>
+        <p>Utilisez votre adresse e-mail professionnelle.</p>
+        <form class="auth__form">
+          <label for="email">E-mail</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+          <label for="password">Mot de passe</label><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><br /><br />
+          <input type="checkbox" id="stay_connected" name="stay_connected" />
+          <label for="stay_connected">Rester connecter sur cet appareil</label
+          ><br />
+          <button type="submit" class="btn btn--primary">Se connecter</button>
+          <p>
+            Pas encore de compte ?
+            <a href="inscription.html">Créer un compte</a>
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
