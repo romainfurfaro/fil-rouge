@@ -352,6 +352,7 @@
   width: 100%;
   font-size: var(--text-sm);
   text-align: left;
+  background-color: var(--color-surface);
 }
 
 .table th,
