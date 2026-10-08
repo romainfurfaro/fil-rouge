@@ -254,8 +254,8 @@
   padding: 10px;
 }
 
-.nav__section + nav__section {
-  margin-top: var(--space-8);
+.nav__section + .nav__section {
+  margin-top: var(--space-5);
 }
 
 .nav__heading {
