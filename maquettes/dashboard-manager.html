@@ -1,0 +1,336 @@
+<!doctype html>
+<!-- lang : langue de la page, utilisee par les lecteurs d'ecran et les moteurs de recherche. -->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Sans cette balise, le mobile affiche la page en version desktop dezoomee. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Titre unique par page : "Nom de la page - Nom du site". C'est ce qui
+       s'affiche dans l'onglet, l'historique et les resultats de recherche. -->
+    <title>Dashboard Employé - TechCorp RH</title>
+    <meta
+      name="description"
+      content="Une phrase qui resume le contenu de la page."
+    />
+
+    <!-- Application interne : pas d'indexation par les moteurs de recherche. -->
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#1d4ed8" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+    <div class="app">
+      <header class="app__header topbar">
+        <button
+          class="topbar__menu"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          <svg
+            class="nav__icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <span class="sr-only">Ouvrir le menu</span>
+        </button>
+
+        <a class="brand" href="dashboard-employe.html">
+          <img
+            class="brand__logo"
+            src="assets/logo.svg"
+            alt=""
+            width="32"
+            height="32"
+          />
+          TechCorp RH
+        </a>
+
+        <div class="topbar__actions">
+          <div class="user">
+            <a href="#" class="icon-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M10 21h4c0 1.1-.9 2-2 2s-2-.9-2-2m11-2v1H3v-1l2-2v-6c0-3.1 2-5.8 5-6.7V4c0-1.1.9-2 2-2s2 .9 2 2v.3c3 .9 5 3.6 5 6.7v6zm-4-8c0-2.8-2.2-5-5-5s-5 2.2-5 5v7h10z"
+                />
+              </svg>
+            </a>
+            <span class="avatar" aria-hidden="true">CM</span>
+            <div class="user__info">
+              <p class="user__name">Karim Benali</p>
+              <p class="user__role">Manager, Pôle Web</p>
+            </div>
+            <a href="login.html" class="icon-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="m17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5M4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <nav
+        class="app__sidebar sidebar"
+        id="navigation"
+        aria-label="Navigation principale"
+      >
+        <div class="nav__section">
+          <h2 class="nav__heading" id="nav-perso">Mon espace</h2>
+          <ul class="nav" role="list" aria-labelledby="nav-perso">
+            <li>
+              <a
+                class="nav__link"
+                href="dashboard-employe.html"
+                aria-current="page"
+                >Tableau de bord</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="conges-demande.html">Mes congés</a>
+            </li>
+            <li>
+              <a class="nav__link" href="note-frais-nouvelle.html"
+                >Notes de frais</a
+              >
+            </li>
+            <li><a class="nav__link" href="materiel.html">Matériel</a></li>
+            <li><a class="nav__link" href="profil.html">Mon profil</a></li>
+          </ul>
+        </div>
+        <div class="nav__section">
+          <h2 class="nav__heading" id="nav-perso">Mon équipe</h2>
+          <ul class="nav" role="list" aria-labelledby="nav-perso">
+            <li>
+              <a
+                class="nav__link"
+                href="dashboard-employe.html"
+                aria-current="page"
+                >Tableau de bord</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="conges-demande.html">Mes congés</a>
+            </li>
+            <li>
+              <a class="nav__link" href="note-frais-nouvelle.html"
+                >Notes de frais</a
+              >
+            </li>
+            <li><a class="nav__link" href="materiel.html">Matériel</a></li>
+            <li><a class="nav__link" href="profil.html">Mon profil</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="app__main" id="contenu" tabindex="-1">
+        <div class="container">
+          <div class="page-header">
+            <div>
+              <h1>Vue d'équipe</h1>
+              <p class="page-header__subtitle">Pôle Web, 8 collaborateurs</p>
+            </div>
+            <div class="page-header__actions">
+              <a class="btn btn--secondary" href="...">Voir le planning</a>
+              <a class="btn btn--primary" href="...">Traiter les demandes</a>
+            </div>
+          </div>
+          <div class="alert alert--warning">
+            <div>
+              <p class="alert__title" aria-hidden="true">
+                Risque de sous-effectif du 26 au 30 octobre
+              </p>
+              <p>
+                3 collaborateurs sur 8 ont posé ou demandé un congé sur cette
+                période.
+              </p>
+            </div>
+          </div>
+
+          <section aria-labelledby="titre-soldes">
+            <h2 id="titre-soldes" class="sr-only">Mes soldes</h2>
+            <ul class="grid-auto list" role="list">
+              <li class="card stat">
+                <span class="stat__label">Congés à valider</span>
+                <span class="stat__value">5</span>
+                <span class="stat__hint">Dont 2 depuis plus de 7 jours</span>
+              </li>
+              <li class="card stat">
+                <span class="stat__label">Notes de frais à valider</span>
+                <span class="stat__value">3</span>
+                <span class="stat__hint">412,30 € au total</span>
+              </li>
+              <li class="card stat">
+                <span class="stat__label">Absents aujourd'hui</span>
+                <div>
+                  <span class="stat__value">2</span>
+                  <span class="stat__unit">sur 8</span>
+                </div>
+                <span class="stat__hint">1 congé payé, 1 arrêt maladie</span>
+              </li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="notes-frais">
+            <div class="grid-split">
+              <div>
+                <div class="card__header">
+                  <h2 class="card__title">Dernières demandes en attente</h2>
+                  <a class="card__link" href="note-frais.html"
+                    >Toutes les demandes</a
+                  >
+                </div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Collaborateur</th>
+                      <th scope="col">Demande</th>
+                      <th scope="col">Soumise le</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Claire Martin</td>
+                      <td>Congés payés, 26 au 30/10 (5 j)</td>
+                      <td>05/10/2026</td>
+                      <td>
+                        <a href="#" class="btn btn--ghost btn--sm"
+                          >Examiner<span class="sr-only">
+                            la demande de Claire Martin</span
+                          ></a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Thomas Roux</td>
+                      <td>RTT, 30/10 (1 j)</td>
+                      <td>02/10/2026</td>
+                      <td>
+                        <a href="#" class="btn btn--ghost btn--sm"
+                          >Examiner<span class="sr-only">
+                            la demande de Claire Martin</span
+                          ></a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Amina Nasri</td>
+                      <td>Note de frais, transport (64,20 €)</td>
+                      <td>27/09/2026</td>
+                      <td>
+                        <a href="#" class="btn btn--ghost btn--sm"
+                          >Examiner<span class="sr-only">
+                            la demande de Claire Martin</span
+                          ></a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="card">
+                <h2>Présence aujourd'hui</h2>
+
+                <ul class="list" role="list">
+                  <li class="list__item">
+                    <div class="user">
+                      <span class="avatar avatar--sm" aria-hidden="true"
+                        >CM</span
+                      >
+                      <div>
+                        <p class="user__name">Claire Martin</p>
+                        <p class="user__role">Développeuse</p>
+                      </div>
+                    </div>
+                    <span class="badge badge--approved">Présente</span>
+                  </li>
+                  <li class="list__item">
+                    <div class="user">
+                      <span class="avatar avatar--sm" aria-hidden="true"
+                        >CM</span
+                      >
+                      <div>
+                        <p class="user__name">Lucas Dubois</p>
+                        <p class="user__role">Développeur</p>
+                      </div>
+                    </div>
+                    <span class="badge badge--rejected"
+                      >Absent, CP jusqu'au 9/10</span
+                    >
+                  </li>
+                  <li class="list__item">
+                    <div class="user">
+                      <span class="avatar avatar--sm" aria-hidden="true"
+                        >CM</span
+                      >
+                      <div>
+                        <p class="user__name">Amina Nasri</p>
+                        <p class="user__role">UX designer</p>
+                      </div>
+                    </div>
+                    <span class="badge badge--approved">Présente</span>
+                  </li>
+                  <li class="list__item">
+                    <div class="user">
+                      <span class="avatar avatar--sm" aria-hidden="true"
+                        >CM</span
+                      >
+                      <div>
+                        <p class="user__name">Thomas Roux</p>
+                        <p class="user__role">Développeur</p>
+                      </div>
+                    </div>
+                    <span class="badge badge--in-progress">Télétravail</span>
+                  </li>
+                  <li class="list__item">
+                    <div class="user">
+                      <span class="avatar avatar--sm" aria-hidden="true"
+                        >CM</span
+                      >
+                      <div>
+                        <p class="user__name">Julie Petit</p>
+                        <p class="user__role">Testeuse QA</p>
+                      </div>
+                    </div>
+                    <span class="badge badge--rejected">Absente, maladie</span>
+                  </li>
+                  <li class="list__item">
+                    <div class="user">
+                      <span class="avatar avatar--sm" aria-hidden="true"
+                        >CM</span
+                      >
+                      <div>
+                        <p class="user__name">Mehdi Fontaine</p>
+                        <p class="user__role">Tech lead</p>
+                      </div>
+                    </div>
+                    <span class="badge badge--approved">Présent</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
