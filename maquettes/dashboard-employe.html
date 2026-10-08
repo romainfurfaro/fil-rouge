@@ -118,7 +118,56 @@
 
       <main class="app__main" id="contenu" tabindex="-1">
         <div class="container">
-          <!-- contenu de la page : étape 3 -->
+          <div class="page-header">
+            <div>
+              <h1>Bonjour Claire</h1>
+              <p class="page-header__subtitle">
+                Résumé de votre activité au 5 octobre 2026.
+              </p>
+            </div>
+            <div class="page-header__actions">
+              <a class="btn btn--secondary" href="..."
+                >Nouvelle note de frais</a
+              >
+              <a class="btn btn--primary" href="...">Demander un congé</a>
+            </div>
+          </div>
+          <section aria-labelledby="titre-soldes">
+            <h2 id="titre-soldes" class="sr-only">Mes soldes</h2>
+            <ul class="grid-auto list" role="list">
+              <li class="card stat">
+                <span class="stat__label">Congés payés restants</span>
+                <span class="stat__value"
+                  >14 <span class="stat__unit">jours</span></span
+                >
+                <div class="bar" aria-hidden="true">
+                  <div class="bar__fill" style="width: 56%"></div>
+                </div>
+                <span class="stat__hint">8 pris, 3 en attente, sur 25</span>
+              </li>
+              <li class="card stat">
+                <span class="stat__label">Congés payés restants</span>
+                <span class="stat__value"
+                  >14 <span class="stat__unit">jours</span></span
+                >
+                <div class="bar" aria-hidden="true">
+                  <div class="bar__fill" style="width: 56%"></div>
+                </div>
+                <span class="stat__hint">8 pris, 3 en attente, sur 25</span>
+              </li>
+              <li class="card stat">
+                <span class="stat__label">Congés payés restants</span>
+                <span class="stat__value"
+                  >14 <span class="stat__unit">jours</span></span
+                >
+                <div class="bar" aria-hidden="true">
+                  <div class="bar__fill" style="width: 56%"></div>
+                </div>
+                <span class="stat__hint">8 pris, 3 en attente, sur 25</span>
+              </li>
+              <!-- ... 3 autres indicateurs -->
+            </ul>
+          </section>
         </div>
       </main>
     </div>
