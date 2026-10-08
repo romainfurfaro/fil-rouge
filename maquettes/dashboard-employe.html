@@ -93,27 +93,29 @@
         id="navigation"
         aria-label="Navigation principale"
       >
-        <h2 class="nav__heading" id="nav-perso">Mon espace</h2>
-        <ul class="nav" role="list" aria-labelledby="nav-perso">
-          <li>
-            <a
-              class="nav__link"
-              href="dashboard-employe.html"
-              aria-current="page"
-              >Tableau de bord</a
-            >
-          </li>
-          <li>
-            <a class="nav__link" href="conges-demande.html">Mes congés</a>
-          </li>
-          <li>
-            <a class="nav__link" href="note-frais-nouvelle.html"
-              >Notes de frais</a
-            >
-          </li>
-          <li><a class="nav__link" href="materiel.html">Matériel</a></li>
-          <li><a class="nav__link" href="profil.html">Mon profil</a></li>
-        </ul>
+        <div class="nav__section">
+          <h2 class="nav__heading" id="nav-perso">Mon espace</h2>
+          <ul class="nav" role="list" aria-labelledby="nav-perso">
+            <li>
+              <a
+                class="nav__link"
+                href="dashboard-employe.html"
+                aria-current="page"
+                >Tableau de bord</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="conges-demande.html">Mes congés</a>
+            </li>
+            <li>
+              <a class="nav__link" href="note-frais-nouvelle.html"
+                >Notes de frais</a
+              >
+            </li>
+            <li><a class="nav__link" href="materiel.html">Matériel</a></li>
+            <li><a class="nav__link" href="profil.html">Mon profil</a></li>
+          </ul>
+        </div>
       </nav>
 
       <main class="app__main" id="contenu" tabindex="-1">
@@ -141,32 +143,147 @@
                   >14 <span class="stat__unit">jours</span></span
                 >
                 <div class="bar" aria-hidden="true">
-                  <div class="bar__fill" style="width: 56%"></div>
+                  <div class="bar__fill" style="width: 32%"></div>
                 </div>
                 <span class="stat__hint">8 pris, 3 en attente, sur 25</span>
               </li>
               <li class="card stat">
-                <span class="stat__label">Congés payés restants</span>
+                <span class="stat__label">RTT restants</span>
                 <span class="stat__value"
-                  >14 <span class="stat__unit">jours</span></span
+                  >6 <span class="stat__unit">jours</span></span
                 >
                 <div class="bar" aria-hidden="true">
-                  <div class="bar__fill" style="width: 56%"></div>
+                  <div class="bar__fill" style="width: 40%"></div>
                 </div>
-                <span class="stat__hint">8 pris, 3 en attente, sur 25</span>
+                <span class="stat__hint">4 pris sur 10</span>
               </li>
               <li class="card stat">
-                <span class="stat__label">Congés payés restants</span>
+                <span class="stat__label">Notes de frais en attente</span>
                 <span class="stat__value"
-                  >14 <span class="stat__unit">jours</span></span
+                  >89,50 <span class="stat__unit">€</span></span
                 >
-                <div class="bar" aria-hidden="true">
-                  <div class="bar__fill" style="width: 56%"></div>
-                </div>
-                <span class="stat__hint">8 pris, 3 en attente, sur 25</span>
+                <span class="stat__hint">1 note en cours de validation</span>
               </li>
-              <!-- ... 3 autres indicateurs -->
+              <li class="card stat">
+                <span class="stat__label">Matériel attribué</span>
+                <span class="stat__value"
+                  >3 <span class="stat__unit">équipements</span></span
+                >
+                <span class="stat__hint"
+                  >Dernière attribution le 2 mars 2026</span
+                >
+              </li>
             </ul>
+          </section>
+
+          <section aria-labelledby="absences">
+            <div class="grid-split">
+              <div class="card">
+                <div class="card__header">
+                  <h2 id="absences" class="card__title">
+                    Mes prochaines absences
+                  </h2>
+                  <a class="card__link" href="conges-demande.html">Tout voir</a>
+                </div>
+                <ul class="list" role="list">
+                  <li class="list__item">
+                    <div>
+                      <p class="font-semibold">Congés payés, 5 jours</p>
+                      <p class="list__meta">
+                        Du lundi 26 au vendredi 30 octobre 2026
+                      </p>
+                    </div>
+                    <span class="badge badge--pending">En attente manager</span>
+                  </li>
+                  <li class="list__item">
+                    <div>
+                      <p class="font-semibold">RTT, 1 jour</p>
+                      <p class="list__meta">Le vendredi 13 novembre 2026</p>
+                    </div>
+                    <span class="badge badge--approved">Validé</span>
+                  </li>
+                  <li class="list__item">
+                    <div>
+                      <p class="font-semibold">Congés payés, 3 jours</p>
+                      <p class="list__meta">
+                        Du lundi 28 au mercredi 30 décembre 2026
+                      </p>
+                    </div>
+                    <span class="badge badge--in-progress">En attente RH</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card">
+                <div class="card__header">
+                  <h2 class="card__title">Mon matériel</h2>
+                </div>
+                <ul class="list" role="list">
+                  <li class="list__item">
+                    <div>
+                      <p class="font-semibold">MacBook Pro 14 pouces</p>
+                      <p class="list__meta">N° de série C02XK1ABMD6T</p>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div>
+                      <p class="font-semibold">Écran Dell 27 pouces</p>
+                      <p class="list__meta">N° de série CN-0F8H3K</p>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div>
+                      <p class="font-semibold">Casque Jabra Evolve2</p>
+                      <p class="list__meta">N° de série JB-55821</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="notes-frais">
+            <div class="card__header">
+              <h2 class="card__title">Mes dernières notes de frais</h2>
+              <a class="card__link" href="note-frais.html">Nouvelle note</a>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Date</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Montant</th>
+                  <th scope="col">Statut</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12/09/2026</td>
+                  <td>Train Lyon - Paris, salon Devoxx</td>
+                  <td>Transport</td>
+                  <td>89,50 €</td>
+                  <td>
+                    <span class="badge badge--pending">En attente manager</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>15/09/2026</td>
+                  <td>Déjeuner client Axelis</td>
+                  <td>Restauration</td>
+                  <td>42,00 €</td>
+                  <td>
+                    <span class="badge badge--approved">Validée</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>02/09/2026</td>
+                  <td>Hôtel, formation Kubernetes</td>
+                  <td>Hébergement</td>
+                  <td>128,00 €</td>
+                  <td><span class="badge badge--refunded">Remboursée</span></td>
+                </tr>
+              </tbody>
+            </table>
           </section>
         </div>
       </main>
