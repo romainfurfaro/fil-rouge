@@ -19,3 +19,16 @@
   font-weight: var(--weight-semibold);
 }
 
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.bold {
+  font-weight: var(--weight-bold);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
